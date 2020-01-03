@@ -8,7 +8,7 @@ import exampleVideoData from '../data/exampleVideoData.js';
 // console.log(exampleVideoData);
 export default createStore(
   rootReducer,
-  { currentVideo: null,
-    videoList: exampleVideoData }, // state is always an object,
+  { videoList: exampleVideoData,
+    currentVideo: null}, // state is always an object,
   applyMiddleware(thunk)
 );

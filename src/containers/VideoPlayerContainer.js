@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import VideoPlayer from '../components/VideoPlayer.js';
-
+import handleVideoSearch from '../actions/search.js';
 
 const mapStateToProps = (state) => {
   return {video: state.currentVideo};

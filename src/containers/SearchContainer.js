@@ -1,3 +1,4 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import Search from './../components/Search.js';
 import handleSearchChange from '../actions/search.js';
@@ -5,12 +6,12 @@ import handleSearchChange from '../actions/search.js';
 
 
 
-let mapStateToProps = (state) => {  // pass value as prop
+let mapStateToProps = (state) => { // pass value as prop
   return {};
 };
 let mapDispatchToProps = (dispatch) => { // pass function as prop (optional)
   return {
-    handleSearchInputChange: (queryString) => {
+    handleInputChange: (queryString) => {
       dispatch(handleSearchChange(queryString));
     }
   };
